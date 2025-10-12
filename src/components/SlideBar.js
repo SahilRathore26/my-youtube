@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const SlideBar = () => {
   const isMenuOpen = useSelector((store) => store.menu.isMenuOpen);
@@ -6,9 +7,9 @@ const SlideBar = () => {
   if( !isMenuOpen ) return null;
 
   return (
-    <div className="py-2 px-6 shadow-lg w-[14%] text-lg">
+    <div className="fixed py-2 px-6 text-lg w-48">
       <ul className="py-4 space-y-2">
-        <li>🏠 Home</li>
+        <li><Link to={"/"}>🏠 Home</Link></li>
         <li>Shorts</li>
         <li>Subscriptions</li>
       </ul>
@@ -21,7 +22,7 @@ const SlideBar = () => {
         <li>Watch Later</li>
         <li>Liked Videos</li>
       </ul>
-      <h1 className="font-bold">Explore</h1>
+      {/* <h1 className="font-bold">Explore</h1>
       <ul className="py-2 space-y-2">
         <li>Shoping</li>
         <li>Music</li>
@@ -33,7 +34,7 @@ const SlideBar = () => {
         <li>Courses</li>
         <li>Fashion & Beauty</li>
         <li>Podcasts</li>
-      </ul>
+      </ul> */}
     </div>
   );
 };

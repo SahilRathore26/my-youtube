@@ -9,7 +9,7 @@ const Header = () => {
   };
   
   return (
-    <div className="flex h-14 justify-between shadow-lg w-full items-center">
+    <div className="fixed z-50 flex h-16 justify-between w-full items-center bg-white shadow-sm">
       <div className="flex px-3 items-center">
         <img
           onClick={() => toggleMenuHandler()}

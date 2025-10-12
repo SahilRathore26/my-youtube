@@ -1,15 +1,11 @@
 import SlideBar from "./SlideBar";
-import MainContainer from "./MainContainer";
+import { Outlet } from "react-router-dom";
 
 const Body = () => {
   return (
-    <div className="flex h-[calc(100vh-56px)]">
-      <div className="overflow-y-auto">
-        <SlideBar />
-      </div>
-      <div className="overflow-y-auto">
-        <MainContainer />
-      </div>
+    <div className="absolute flex top-12">
+      <SlideBar />
+      <Outlet />
     </div>
   );
 };
