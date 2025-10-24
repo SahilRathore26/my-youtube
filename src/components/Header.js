@@ -18,7 +18,7 @@ const Header = () => {
           src="https://th.bing.com/th/id/OIP.K5-GCbctqquBSaEgQnVEYgHaHa?w=187&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
         ></img>
         <img
-          className="h-14"
+          className="h-16"
           alt="youtube-logo"
           src="https://vectorseek.com/wp-content/uploads/2021/01/white-1024x478.jpg"
         ></img>
